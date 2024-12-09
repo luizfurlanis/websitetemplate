@@ -100,6 +100,27 @@ body, html {
     margin-bottom: 10px;
 }
 
+.home-section {
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    position: relative;
+    background-image: url('../assets/banner\ buyart.jpg'); 
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-content h2 {
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    font-weight: 600;
+}
+
 .contact-title {
     margin-top: 200px;
     margin-left: 50px;
