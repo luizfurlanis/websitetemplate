@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'dmsans';
+    src: url(fonts/DMSans-Regular.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'dmsans', sans-serif;
+}
+
+.top-bar {
+    background-color: #FF0000;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    color: #000;
+}
+
+.logoimagem {
+    width: 140px;
+    height: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.4s ease, opacity 0.4s ease; /* faz a transição entra a cor da borda e a opacidade */
+}
+
+.nav-links a:hover {
+    opacity: .5;
+    border-bottom: 1px solid #000000; 
+}
+
+.nav-icons {
+    display: flex;
+    height: auto;
+    gap: 22px;
+}
+
+.nav-icons img{
+    width: 22px;
+    height: 22px;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #fff;
+    margin-top: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    display: block; 
+    padding-top: 15px; 
+    left: 10%;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-title {
+    margin-top: 200px;
+    margin-left: 50px;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.contact-info {
+    color: #000;
+    font-size: 13px;
+    margin-left: 50px;
+    margin-top: 12px;
+    justify-content: left;
+}
+
+.contact-info input, textarea {
+    width: 60%;
+    border-radius: 4px;
+    display: block;
+    padding: 13px;
+    margin-bottom: 20px;
+    border:1px solid rgb(190, 190, 190);  
+    font-size: 15px;
+    color: #555;
+}
+
+.contact-info label {
+    width: 50%;
+    border-radius: 4px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.contact-info input:focus, .contact-info textarea:focus {
+    outline: none; 
+    border: 1px solid rgb(190, 190, 190);
+}
+
+#contact-logo {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-button {
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 6px 40px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #fff;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    margin-top: 15px;
+}
+
+.contact-button:hover {
+  box-shadow: inset 200px 0 0 0 #000;
+  color:#fff
+}
