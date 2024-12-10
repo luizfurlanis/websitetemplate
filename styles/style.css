@@ -13,13 +13,6 @@ body, html {
     font-family: 'dmsans', sans-serif;
 }
 
-.top-bar {
-    background-color: #FF0000;
-    text-align: center;
-    padding: 8px 0;
-    font-size: 14px;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -131,8 +124,22 @@ body, html {
     padding: 15px;
 }
 
+.contact-banner {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    position: relative;
+    background-image: url('../assets/inspiracoes-de-parede-de-quadros.jpg'); 
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .contact-title {
-    margin-top: 200px;
+    margin-top: 50px;
     margin-left: 50px;
     font-size: 14px;
     margin-bottom: 35px;
