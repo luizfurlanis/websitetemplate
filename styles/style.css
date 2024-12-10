@@ -97,9 +97,10 @@ body, html {
 
 .home-section {
     display: flex;
-    height: 80vh;
+    height: 60vh;
     flex-direction: column;
     position: relative;
+    margin-top: 100px;
     background-image: url('../assets/QUADROS\ PARA\ SALA\ DESKTOP\ 2-1920x600.jpg'); 
     background-size: cover;
     background-position: center;
@@ -126,9 +127,10 @@ body, html {
 
 .contact-banner {
     display: flex;
-    height: 80vh;
+    height: 60vh;
     flex-direction: column;
     position: relative;
+    margin-top: 100px;
     background-image: url('../assets/inspiracoes-de-parede-de-quadros.jpg'); 
     background-size: contain;
     background-position: center;
@@ -201,6 +203,28 @@ body, html {
 .contact-button:hover {
   box-shadow: inset 200px 0 0 0 #000;
   color:#fff
+}
+
+.products-header {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+    background-image: url('../assets/botanica.jpg'); 
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.products-header h1 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 35px;
+    text-transform: uppercase;
 }
 
 .footer {
