@@ -63,12 +63,12 @@ body, html {
     height: 22px;
 }
 
-.dropdown {
+.dropdown, .dropdown-about {
     position: relative;
     display: block;
 }
 
-.dropdown-menu {
+.dropdown-menu, .dropdown-menu-about {
     position: absolute;
     background-color: #fff;
     margin-top: 5px;
@@ -79,7 +79,15 @@ body, html {
     transition: opacity 0.5s ease, visibility 0s linear 0.5s;
     display: block; 
     padding-top: 15px; 
-    left: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-menu a, .dropdown-menu-about a  {
+    display: block;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -88,11 +96,10 @@ body, html {
     transition-delay: 0s;
 }
 
-.dropdown-menu a {
-    display: block;
-    color: #000;
-    text-align: center;
-    margin-bottom: 10px;
+.dropdown-about:hover .dropdown-menu-about {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 .home-section {
