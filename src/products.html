@@ -13,12 +13,12 @@
             <a href="index.html"><img class='logoimagem'src="../assets/logo-BuyArt.png" alt=""></a>
         </div>
         <ul class="nav-links">
-            <li class="dropdown"><a id="product">PRODUTOS</a>
+            <li class="dropdown"><a href='products.html' id="product">PRODUTOS</a>
                 <div class="dropdown-menu">
                     <a href="products.html">Botânica</a>
-                    <a href="">Objetos</a>
-                    <a href="">Paisagem</a>
-                    <a href="">ZOO</a>
+                    <a href="products.html">Objetos</a>
+                    <a href="products.html">Paisagem</a>
+                    <a href="products.html">ZOO</a>
                 </div>
             </li>
             <li><a href="#">SOBRE</a></li>
@@ -38,29 +38,54 @@
     <!-- Lista de produtos -->
     <section class="product-list">
         <div class="product-card" onclick="window.location.href='product details.html'">
-            <img src="https://via.placeholder.com/250" alt="Quadro 1">
+            <img src="../assets/imagem quadro 1.jpg" alt="Quadro 1">
             <h3>Quadro Abstrato</h3>
             <p>A partir de R$ 149,90</p>
         </div>
         
         <div class="product-card" onclick="window.location.href='product details.html'">
-            <img src="https://via.placeholder.com/250" alt="Quadro 2">
+            <img src="../assets/imagem quadro 2.jpg" alt="Quadro 2">
             <h3>Quadro Moderno</h3>
             <p>A partir de R$ 199,90</p>
         </div>
         
         <div class="product-card" onclick="window.location.href='product details.html'">
-            <img src="https://via.placeholder.com/250" alt="Quadro 3">
+            <img src="../assets/imagem quadro 3.jpg" alt="Quadro 3">
             <h3>Quadro Minimalista</h3>
             <p>A partir de R$ 129,90</p>
         </div>
         
         <div class="product-card" onclick="window.location.href='product details.html'">
-            <img src="https://via.placeholder.com/250" alt="Quadro 4">
+            <img src="../assets/imagem quadro 4.jpg" alt="Quadro 4">
             <h3>Quadro Natureza</h3>
             <p>A partir de R$ 179,90</p>
         </div>
     </section>
 
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-about">
+                <h4>SOBRE BUYART</h4>
+                <li><a href="#">Sobre Nos</a></li>
+                <li><a href="#">Privacidade e Segurança</a></li>
+                <li><a href="#">Depoimentos</a></li>
+            </ul>
+            <ul class="footer-suport">
+                <h4>SUPPORT</h4>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Trocas e Devoluções</a></li>
+                <li><a href="#">Prazo de Entrega</a></li>
+            </ul>
+            <ul class="footer-register">
+                <h4>Novidades e Promoções</h4>
+                <p>Coloque seu email e fique por dentro das novidades e promoçoes</p>
+                <div class="newsletter">
+                    <input type="email" id="email" placeholder="Seu Email" required>
+                    <div class="footer-button">ENVIAR</div>
+                </div>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

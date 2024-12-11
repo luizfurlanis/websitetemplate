@@ -225,6 +225,18 @@ body, html {
     letter-spacing: 2px;
     font-size: 35px;
     text-transform: uppercase;
+    background: linear-gradient(to top, #000 50%, transparent 50%); /* deixa o backgroud colorido até a metade apenas */
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.product-card {
+    text-align: center;
 }
 
 .footer {
