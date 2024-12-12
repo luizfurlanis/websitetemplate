@@ -25,6 +25,7 @@ body, html {
     z-index: 100;
     background-color: #fff;
     color: #000;
+    text-align: right;
 }
 
 .logoimagem {
@@ -37,6 +38,7 @@ body, html {
     font-size: 15px;
     display: flex;
     gap: 30px;
+    margin-left: 170px;
 }
 
 .nav-links a {
@@ -60,7 +62,33 @@ body, html {
 
 .nav-icons img{
     width: 22px;
-    height: 22px;
+    height: 30px;
+}
+
+.search-container {
+    width: 170px;
+}
+
+.busca {
+    background: url(../assets/search.svg) no-repeat center right;
+    height: 30px;
+    width: 23px;
+    padding: 5px;
+    background-size: 23px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.2s linear;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+    margin-right: 23px;
+}
+
+.busca:focus {
+    border: 1px solid #000;
+    width: 100%;
 }
 
 .dropdown, .dropdown-about {
@@ -108,7 +136,7 @@ body, html {
     flex-direction: column;
     position: relative;
     margin-top: 100px;
-    background-image: url('../assets/QUADROS\ PARA\ SALA\ DESKTOP\ 2-1920x600.jpg'); 
+    background-image: url('../assets/inspiracoes-de-parede-de-quadros.jpg'); 
     background-size: cover;
     background-position: center;
     align-items: center;
