@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'dmsans';
-    src: url(fonts/DMSans-Regular.ttf) format('truetype');
+    src: url(../assets/DMSans-Regular.ttf) format('truetype');
 }
 
 * {
@@ -263,11 +263,22 @@ input[type="search"]::-webkit-search-cancel-button {
     background: linear-gradient(to top, #000 50%, transparent 50%); /* deixa o backgroud colorido até a metade apenas */
 }
 
-.product-list {
+#listaProdutos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-bottom: 100px;
     margin-top: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+#listaProdutos li {
+    padding: 25px;
+    list-style: none;
+}
+
+#listaProdutos li img{
+   width: 100px;
 }
 
 .product-card {
