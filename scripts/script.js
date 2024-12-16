@@ -17,7 +17,7 @@ function displayProducts(products) {
     products.forEach((item) => {
         const li = document.createElement("li");
         li.innerHTML = `
-            <a href='#'>
+            <a href='${item.id}.html'>
                 <img src="${item.image}" alt="${item.title}">
                 <h3>${item.title}</h3>
                 <p>$${item.price}</p>
