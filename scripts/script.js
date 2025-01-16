@@ -48,3 +48,12 @@ fetch('https://fakestoreapi.com/products?limit=12')
     .catch((error) => {
         console.error("Erro ao buscar produtos:", error);
     });
+
+
+    function trocar(){
+        document.getElementById("figura").src = "../assets/Banners/BannerRino.jpg";
+    }
+
+    function trocar_flor(){
+        document.getElementById("figura").src = "../assets/imagem flor teste.jpg";
+    }
