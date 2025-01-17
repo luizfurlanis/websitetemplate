@@ -28,7 +28,7 @@ function displayProducts(products) {
 }
 
 // Fetch dos produtos da API
-fetch('https://fakestoreapi.com/products?limit=12')
+fetch('http://127.0.0.1:5000/quadros')
     .then(res => res.json())
     .then((json) => {
         console.log("Produtos recebidos da API:", json);
