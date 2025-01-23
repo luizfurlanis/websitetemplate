@@ -18,9 +18,9 @@ function displayProducts(products) {
         const li = document.createElement("li");
         li.innerHTML = `
             <a href='${item.id}.html'>
-                <img src="${item.image}" alt="${item.title}">
-                <h3>${item.title}</h3>
-                <p>$${item.price}</p>
+                <img src="${item.imagem}" alt="${item.titulo}">
+                <h3>${item.titulo}</h3>
+                <p>$${item.preco}</p>
             </a>
         `;
         ul.appendChild(li); // Adiciona o item na lista
