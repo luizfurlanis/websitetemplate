@@ -38,7 +38,6 @@ body, html {
     font-size: 15px;
     display: flex;
     gap: 30px;
-    margin-left: 170px;
 }
 
 .nav-links a {
@@ -419,6 +418,15 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 50px;
 }
 
+.product-image ul {
+    display: flex;
+}
+
+.product-image li {
+    text-decoration: none;
+    list-style: none;
+}
+
 .product-image img {
     width: 100%;
 }
@@ -500,7 +508,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .product_selector_button img {
     border-radius: 100%;
-    width: 40px;
+    width: 100%;
+    height: 100%;
 }
 
 .confirm-button button {
