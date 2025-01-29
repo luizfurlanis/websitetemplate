@@ -4,7 +4,7 @@ let productsData = [];
 // Função para filtrar os produtos com base no valor da pesquisa
 function filterProducts(products, searchQuery) {
     return products.filter(item => 
-        item.title.toLowerCase().includes(searchQuery.toLowerCase())
+        item.titulo.toLowerCase().includes(searchQuery.toLowerCase())
     );
 }
 
@@ -50,10 +50,10 @@ fetch('http://127.0.0.1:5000/quadros')
     });
 
 
-    function trocar(){
-        document.getElementById("figura").src = "../assets/Banners/BannerRino.jpg";
-    }
+    // function trocar(){
+    //     document.getElementById("figura").src = "../assets/Banners/BannerRino.jpg";
+    // }
 
-    function trocar_flor(){
-        document.getElementById("figura").src = "../assets/imagem flor teste.jpg";
-    }
+    // function trocar_flor(){
+    //     document.getElementById("figura").src = "../assets/imagem flor teste.jpg";
+    // }
