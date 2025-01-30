@@ -50,9 +50,9 @@ fetch('http://127.0.0.1:5000/quadros')
     });
 
 
-    // function trocar(){
-    //     document.getElementById("figura").src = "../assets/Banners/BannerRino.jpg";
-    // }
+function trocarImagem(imagem){
+    document.getElementById("figura").src = imagem;
+}
 
     // function trocar_flor(){
     //     document.getElementById("figura").src = "../assets/imagem flor teste.jpg";

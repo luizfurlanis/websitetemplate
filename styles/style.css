@@ -520,3 +520,13 @@ input[type="search"]::-webkit-search-cancel-button {
     color: #fff;
     border: none;
 }
+
+.size_guide {
+    font-size: 13px;
+    padding-top: 40px;
+}
+
+.size_guide p {
+    padding-top: 15px;
+    margin-bottom: 0px !important;
+}
