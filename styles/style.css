@@ -418,17 +418,17 @@ input[type="search"]::-webkit-search-cancel-button {
     padding: 50px;
 }
 
-.product-image ul {
+.product-image {
     display: flex;
-}
-
-.product-image li {
-    text-decoration: none;
-    list-style: none;
 }
 
 .product-image img {
     width: 100%;
+    display: block;
+}
+
+.product-image button {
+    display: block;
 }
 
 #especificacoes {
@@ -462,10 +462,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .product-path li:last-child {
     opacity: 0.6;
-}
-
-.product-image button {
-    width: 100px;
 }
 
 .highlight {
@@ -529,4 +525,275 @@ input[type="search"]::-webkit-search-cancel-button {
 .size_guide p {
     padding-top: 15px;
     margin-bottom: 0px !important;
+}
+
+/* Mudança da visulização da imagem do produto na aba de comprar */
+.product-image {
+    position: relative;
+    width: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+    padding: 10px;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.arrow img {
+    width: 30px;
+    height: auto;
+    display: block;
+}
+
+.product-image:hover .arrow {
+    opacity: 1;
+}
+
+.prev:hover {
+    left: -55px;
+}
+
+.next:hover {
+    right: -55px;
+}
+
+.prev {
+    left: -45px;
+    transition: 0.4s;
+}
+
+.next {
+    right: -45px;
+    transition: 0.4s
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    
+    * {
+        font-size: 14px; /* Reduzir o tamanho da fonte para telas menores */
+    }
+
+    body, html {
+        overflow-x: hidden; /* Evitar rolagem horizontal */
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 10px; /* Reduzir o padding */
+        flex-direction: column; /* Colocar itens em coluna */
+        align-items: flex-start; /* Alinhar itens à esquerda */
+    }
+
+    .logoimagem {
+        width: 100px; /* Reduzir o tamanho do logo */
+        height: auto; /* Manter a proporção */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Colocar links em coluna */
+        gap: 10px; /* Reduzir o espaço entre os links */
+        font-size: 14px; /* Reduzir o tamanho da fonte */
+        margin-top: 10px; /* Adicionar margem superior */
+    }
+
+    .nav-icons {
+        margin-top: 10px; /* Adicionar margem superior */
+    }
+
+    .search-container {
+        width: 100%; /* Fazer a barra de busca ocupar toda a largura */
+    }
+
+    .busca:focus {
+        width: 100%; /* Garantir que a barra de busca ocupe toda a largura */
+    }
+
+    /* Dropdowns */
+    .dropdown-menu, .dropdown-menu-about {
+        left: 0; /* Alinhar dropdowns à esquerda */
+        transform: none; /* Remover transformação */
+        width: 100%; /* Fazer dropdowns ocuparem toda a largura */
+    }
+
+    /* Seções de banner */
+    .home-section, .contact-banner, .products-header, .home-about-section {
+        height: 40vh; /* Reduzir a altura dos banners */
+        margin-top: 80px; /* Ajustar margem superior */
+        background-size: cover; /* Garantir que a imagem cubra toda a área */
+    }
+
+    .home-history, .about-us {
+        padding: 20px; /* Reduzir o padding */
+    }
+
+    /* Lista de produtos */
+    #listaProdutos {
+        grid-template-columns: 1fr; /* Colocar produtos em uma coluna */
+        margin-top: 40px; /* Ajustar margem superior */
+        margin-bottom: 40px; /* Ajustar margem inferior */
+    }
+
+    #listaProdutos li img {
+        width: 100%; /* Fazer imagens ocuparem toda a largura */
+        max-width: 220px; /* Limitar o tamanho máximo */
+    }
+
+    /* Formulário de contato */
+    .contact-info input, .contact-info textarea {
+        width: 100%; /* Fazer campos ocuparem toda a largura */
+    }
+
+    .contact-button {
+        width: 100%; /* Fazer botão ocupar toda a largura */
+        padding: 10px; /* Ajustar padding */
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column; /* Colocar itens em coluna */
+        align-items: center; /* Centralizar itens */
+        text-align: center; /* Centralizar texto */
+    }
+
+    .footer-content ul {
+        margin-left: 0; /* Remover margem à esquerda */
+        margin-right: 0; /* Remover margem à direita */
+    }
+
+    .footer-register {
+        max-width: 100%; /* Fazer o registro ocupar toda a largura */
+    }
+
+    .newsletter {
+        flex-direction: column; /* Colocar itens em coluna */
+        gap: 10px; /* Reduzir o espaço entre os itens */
+    }
+
+    .footer-button {
+        width: 100%; /* Fazer botão ocupar toda a largura */
+    }
+
+    .content-desc {
+        flex-direction: column; /* Coloca a imagem acima da descrição */
+        padding: 20px; /* Reduz o padding para telas menores */
+    }
+
+    #especificacoes {
+        width: 100%; /* Faz a descrição ocupar toda a largura */
+        margin-left: 0; /* Remove a margem à esquerda */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .product-image {
+        margin-bottom: 20px; /* Adiciona espaço entre a imagem e a descrição */
+    }
+
+    .desc-products {
+        margin: 20px; /* Reduz a margem para telas menores */
+    }
+
+    .confirm-button button {
+        width: 100%; /* Faz o botão ocupar toda a largura */
+        padding: 15px; /* Ajusta o padding para telas menores */
+    }
+}
+
+/* para celular */
+
+@media (max-width: 480px) {
+    /* Ajustes gerais */
+    * {
+        font-size: 13px; /* Reduzir ainda mais o tamanho da fonte */
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 8px; /* Reduzir o padding */
+    }
+
+    .logoimagem {
+        width: 80px; /* Reduzir ainda mais o tamanho do logo */
+    }
+
+    .nav-links {
+        font-size: 12px; /* Reduzir o tamanho da fonte dos links */
+        gap: 8px; /* Reduzir o espaço entre os links */
+    }
+
+    .nav-icons img {
+        width: 18px; /* Reduzir o tamanho dos ícones */
+        height: 18px;
+    }
+
+    /* Seções de banner */
+    .home-section, .contact-banner, .products-header, .home-about-section {
+        height: 30vh; /* Reduzir ainda mais a altura dos banners */
+        margin-top: 60px; /* Ajustar margem superior */
+    }
+
+    .home-history h3, .products-header h1 {
+        font-size: 20px; /* Reduzir o tamanho da fonte dos títulos */
+    }
+
+    .home-history p, .about-us p {
+        font-size: 12px; /* Reduzir o tamanho da fonte dos parágrafos */
+    }
+
+    /* Lista de produtos */
+    #listaProdutos {
+        margin-top: 20px; /* Ajustar margem superior */
+        margin-bottom: 20px; /* Ajustar margem inferior */
+    }
+
+    #listaProdutos li {
+        padding: 10px; /* Reduzir o padding dos itens */
+    }
+
+    #listaProdutos li img {
+        max-width: 150px; /* Reduzir o tamanho máximo das imagens */
+    }
+
+    /* Formulário de contato */
+    .contact-info input, .contact-info textarea {
+        padding: 10px; /* Reduzir o padding dos campos */
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+    }
+
+    .contact-button {
+        padding: 8px 20px; /* Reduzir o padding do botão */
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+    }
+
+    /* Footer */
+    .footer {
+        padding: 20px; /* Reduzir o padding do footer */
+    }
+
+    .footer-content h4 {
+        font-size: 1rem; /* Reduzir o tamanho da fonte dos títulos */
+    }
+
+    .footer-content li {
+        font-size: 12px; /* Reduzir o tamanho da fonte dos itens */
+    }
+
+    .footer-register input {
+        padding: 5px; /* Reduzir o padding do campo de newsletter */
+    }
+
+    .footer-button {
+        padding: 5px 20px; /* Reduzir o padding do botão */
+        font-size: 12px; /* Reduzir o tamanho da fonte */
+    }
 }

@@ -50,8 +50,20 @@ fetch('http://127.0.0.1:5000/quadros')
     });
 
 
-function trocarImagem(imagem){
-    document.getElementById("figura").src = imagem;
+const currentId = {'p1': 0, 'p2' : 0 };
+const produtos1 = ["../assets/Images/Platyceriun Rojo/60x60/1 Quadro L  60x60  Purple Platyceriun Rojo (2).jpg",
+    "../assets/Images/Iris Botão/43x43/1 Quadro L 43x43 White    Iris Botão .jpg", "../assets/Banners/BannerRino.jpg"];
+
+function trocarImagem(direction, id, imagem){
+    currentId[id] +=  direction;
+
+    if(currentId[id] < 0) {
+        currentId[id] = imagem.length - 1;
+    } else if (currentId[id] >= imagem.length) {
+        currentId[id] = 0;
+    }
+
+    document.getElementById(id).src = imagem[currentId[id]];
 }
 
     // function trocar_flor(){
