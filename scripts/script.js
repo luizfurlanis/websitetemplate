@@ -53,8 +53,9 @@ fetch('http://127.0.0.1:5000/quadros')
 
     //Codigo que troca a visualização do produto
 const currentId = {'p1': 0, 'p2' : 0 };
-const produtos1 = ["../assets/Images/Iris Botão/60x60/2 Quadro L 60x60     Ligth Grey    Iris Botão  .jpg",
-    "../assets/Images/Iris Botão/60x60/1 Quadro L 60x60 White    Iris Botão .jpg", "../assets/Images/Iris Botão/60x60/4 Quadro L 60x60    Purple   Iris Botão.jpg"];
+const produtosIrisBotao = ["../assets/Images/Iris Botão/60x60/2 Quadro L 60x60     Ligth Grey    Iris Botão  .jpg",
+    "../assets/Images/Iris Botão/60x60/1 Quadro L 60x60 White    Iris Botão .jpg", "../assets/Images/Iris Botão/60x60/4 Quadro L 60x60    Purple   Iris Botão.jpg", 
+    "../assets/Images/Iris Botão/60x60/3 Quadro L 60x60    Dark Grey    Iris Botão .jpg"];
 
 function trocarImagem(direction, id, imagem){
     currentId[id] +=  direction;
@@ -68,7 +69,9 @@ function trocarImagem(direction, id, imagem){
     document.getElementById(id).src = imagem[currentId[id]];
 }
 
-
+function trocarImagemCor(number, id, imagem){
+    document.getElementById(id).src = imagem[number]
+}
 // Codigo que seleciona os botoes de tamanho e cor do produto
 const colorButton = document.querySelectorAll('.product_color_button');
 const sizeButton = document.querySelectorAll('.product_selector_button');
