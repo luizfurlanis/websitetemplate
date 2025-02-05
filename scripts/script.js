@@ -40,11 +40,13 @@ function displayProducts(products) {
     products.forEach((item) => {
         const li = document.createElement("li");
         li.innerHTML = `
+        <div class='products-box'>
             <a href='${item.titulo}.html'>
                 <img src="${item.imagem}" alt="${item.titulo}">
                 <h3>${item.titulo}</h3>
                 <p>$${item.preco}</p>
             </a>
+        </div>
         `;
         ul.appendChild(li); // Adiciona o item na lista
     });
