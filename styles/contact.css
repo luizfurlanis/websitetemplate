@@ -1,0 +1,79 @@
+.contact-banner {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+    background-image: url('../assets/Banners/BannerSala2.jpg'); 
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-title {
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.contact-info {
+    color: #000;
+    font-size: 13px;
+    margin-left: 50px;
+    margin-top: 12px;
+    justify-content: left;
+}
+
+.contact-info input, textarea {
+    width: 60%;
+    border-radius: 4px;
+    display: block;
+    padding: 13px;
+    margin-bottom: 20px;
+    border:1px solid rgb(190, 190, 190);  
+    font-size: 15px;
+    color: #555;
+}
+
+.contact-info label {
+    width: 50%;
+    border-radius: 4px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.contact-info input:focus, .contact-info textarea:focus {
+    outline: none; 
+    border: 1px solid rgb(190, 190, 190);
+}
+
+#contact-logo {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-button {
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 6px 40px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #fff;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.contact-button:hover {
+  box-shadow: inset 200px 0 0 0 #000;
+  color:#fff
+}

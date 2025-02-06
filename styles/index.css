@@ -1,0 +1,25 @@
+.home-section {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+    background-image: url('../assets/Banners/BannerRino.jpg'); 
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.home-history {
+    text-align: center;
+    padding-bottom: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.home-history p {
+    padding: 15px;
+}

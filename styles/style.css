@@ -7,10 +7,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'dmsans', sans-serif;
 }
 
-body, html {
-    font-family: 'dmsans', sans-serif;
+.logoimagem {
+    width: 140px;
+    height: 80px;
 }
 
 .navbar {
@@ -26,11 +28,6 @@ body, html {
     background-color: #fff;
     color: #000;
     text-align: right;
-}
-
-.logoimagem {
-    width: 140px;
-    height: 80px;
 }
 
 .nav-links {
@@ -53,7 +50,7 @@ body, html {
     border-bottom: 1px solid #000000; 
 }
 
-.nav-icons {
+/* .nav-icons {
     display: flex;
     height: auto;
     gap: 22px;
@@ -62,7 +59,7 @@ body, html {
 .nav-icons img{
     width: 22px;
     height: 30px;
-}
+} */
 
 .search-container {
     width: 170px;
@@ -127,142 +124,6 @@ input[type="search"]::-webkit-search-cancel-button {
     opacity: 1;
     visibility: visible;
     transition-delay: 0s;
-}
-
-.home-section {
-    display: flex;
-    height: 60vh;
-    flex-direction: column;
-    position: relative;
-    margin-top: 100px;
-    background-image: url('../assets/Banners/BannerRino.jpg'); 
-    background-size: contain;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.home-history {
-    text-align: center;
-    padding-bottom: 50px;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.home-history h3 {
-    margin: 5px;
-}
-
-.home-history p {
-    padding: 15px;
-}
-
-.contact-banner {
-    display: flex;
-    height: 60vh;
-    flex-direction: column;
-    position: relative;
-    margin-top: 100px;
-    background-image: url('../assets/Banners/BannerSala2.jpg'); 
-    background-size: contain;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.contact-title {
-    margin-top: 50px;
-    margin-left: 50px;
-    font-size: 14px;
-    margin-bottom: 35px;
-}
-
-.contact-info {
-    color: #000;
-    font-size: 13px;
-    margin-left: 50px;
-    margin-top: 12px;
-    justify-content: left;
-}
-
-.contact-info input, textarea {
-    width: 60%;
-    border-radius: 4px;
-    display: block;
-    padding: 13px;
-    margin-bottom: 20px;
-    border:1px solid rgb(190, 190, 190);  
-    font-size: 15px;
-    color: #555;
-}
-
-.contact-info label {
-    width: 50%;
-    border-radius: 4px;
-    display: block;
-    padding-bottom: 10px;
-}
-
-.contact-info input:focus, .contact-info textarea:focus {
-    outline: none; 
-    border: 1px solid rgb(190, 190, 190);
-}
-
-#contact-logo {
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-
-.contact-button {
-    color: #000;
-    border: 2px solid #000;
-    border-radius: 4px;
-    padding: 6px 40px;
-    display: inline-block;
-    font-size: 14px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #fff;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-    margin-top: 15px;
-    margin-bottom: 35px;
-}
-
-.contact-button:hover {
-  box-shadow: inset 200px 0 0 0 #000;
-  color:#fff
-}
-
-.about-us {
-    margin: 50px;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    text-align: center;
-}
-
-.home-about-section {
-    display: flex;
-    height: 60vh;
-    flex-direction: column;
-    position: relative;
-    margin-top: 100px;
-    background-image: url('../assets/Banners/BannerParede.jpg'); 
-    background-size: contain;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.about-us p {
-    margin: 20px;
 }
 
 .footer {

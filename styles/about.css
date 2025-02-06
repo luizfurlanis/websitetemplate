@@ -1,0 +1,25 @@
+.home-about-section {
+    display: flex;
+    height: 60vh;
+    flex-direction: column;
+    position: relative;
+    margin-top: 100px;
+    background-image: url('../assets/Banners/BannerParede.jpg'); 
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-us {
+    margin: 50px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.about-us p {
+    margin: 20px;
+}
