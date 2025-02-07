@@ -1,4 +1,4 @@
-.home-section {
+/* .home-section {
     display: flex;
     height: 60vh;
     flex-direction: column;
@@ -11,6 +11,61 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 50px;
+} */
+
+/* slider css */
+
+section.slider {
+    margin-top: 10%;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+}
+
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input {
+    display: none;
+}
+
+.slide-box {
+    width: 25%;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+}
+
+.slide-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-manual , .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 61vh;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn , .nav-auto div{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.nav-manual .manual-btn:not(:last-child) , .nav-auto div:not(:last-child){
+    margin-right: 5px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: black;
 }
 
 .home-history {
@@ -18,6 +73,7 @@
     padding-bottom: 50px;
     max-width: 700px;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .home-history p {
