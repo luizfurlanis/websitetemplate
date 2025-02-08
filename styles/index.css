@@ -16,7 +16,7 @@
 /* slider css */
 
 section.slider {
-    margin-top: 10%;
+    margin-top: 100px;
     overflow: hidden;
     height: auto;
     width: 100%;
@@ -34,9 +34,10 @@ section.slider {
 
 .slide-box {
     width: 25%;
-    height: 60vh;
+    height: 70vh;
     text-align: center;
     position: relative;
+    transition: 1s;
 }
 
 .slide-box img {
@@ -47,21 +48,21 @@ section.slider {
 .nav-manual , .nav-auto{
     position: absolute;
     width: 100%;
-    margin-top: 61vh;
+    margin-top: 71vh;
     display: flex;
     justify-content: center;
 }
 
 .nav-manual .manual-btn , .nav-auto div{
     border: 1px solid black;
-    padding: 5px;
+    padding: 4px;
     border-radius: 50%;
     cursor: pointer;
     transition: 0.4s;
 }
 
 .nav-manual .manual-btn:not(:last-child) , .nav-auto div:not(:last-child){
-    margin-right: 5px;
+    margin-right: 4px;
 }
 
 .nav-manual .manual-btn:hover {
@@ -78,4 +79,36 @@ section.slider {
 
 .home-history p {
     padding: 15px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1 {
+    background-color: #000;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2 {
+    background-color: #000;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: #000;
+}
+
+#radio4:checked ~ .nav-auto .auto-btn4 {
+    background-color: #000;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
 }
