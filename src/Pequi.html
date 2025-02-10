@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyArt</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/product_details.css">
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img class='logoimagem' src="../assets/Banners/logo-BuyArt.png" alt=""></a>
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown"><a href='products.html' id="product">PRODUTOS</a>
+                <div class="dropdown-menu">
+                    <a href="products.html">Quadros</a>
+                    <a href="products.html">Artigos</a>
+                    <a href="products.html">Vasos</a>
+                </div>
+            </li>
+            <li class="dropdown-about"><a href="sobre.html">SOBRE</a>
+                <div class="dropdown-menu-about">
+                    <a href="sobre.html">Sobre Nos</a>
+                    <a href="sobre.html">Politica de Privacidade</a>
+                    <a href="sobre.html">Prazo de Entrega</a>
+                    <a href="sobre.html">Trocas e Devoluçoes</a>
+                </div>
+            </li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="search-container">
+                <input type="search" class="busca" placeholder="Buscar">
+            </div>
+            <!-- <a href="#"><img src="../assets/Icons/Shopping cart.svg" alt="Cart"></a>
+            <a href="#"><img src="../assets/Icons/Icon.svg" alt="User"></a> -->
+        </div>
+    </nav>
+
+    <div class="container-desc">
+        <div class="tabs">
+            <div class="tab active" data-tab="descricao">Descrição</div>
+            <div class="tab" data-tab="especificacoes">Especificações</div>
+            <div class="tab" data-tab="avaliacoes">Avaliações</div>
+        </div>
+
+        <div class="content-desc" id="descricao">
+            <div class="product-image">
+                <button class="arrow prev" onclick="trocarImagem(-1, 'imagem-central', produtosPequi)"><img src="../assets/Icons/arrow-left.png" alt="left"></button>
+                <img id="imagem-central" src="../assets/Images/Pequi/60x60/1 Quadro L 60x60  .jpg">
+                <button class='arrow next' onclick="trocarImagem(1, 'imagem-central', produtosPequi)"><img src="../assets/Icons/arrow-right.png" alt="right"></button>               
+          </div>
+            <div id="especificacoes">
+                <h2>PEQUI</h2>
+                <p>descrição e blabla, i gonna write something here in inglish jsut to cover the árt that qe dont now what to put yet, so if you are reading this
+                    , khown that it is not import, just "random" word that i worte here to look like there is something important in here.
+                </p>
+                <div class="color-selector">
+                    <ul class="options">
+                        <li>
+                            <button class="product_color_button" type="button" onclick="trocarImagemCor(0, 'imagem-central', produtosPequi)">
+                                <img src="../assets/Colors/branco.avif" alt="Branco">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product_color_button" type="button" onclick="trocarImagemCor(1, 'imagem-central', produtosPequi)">
+                                <img src="../assets/Colors/cinza-claro.avif" alt="Cinza">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product_color_button" type="button" onclick="trocarImagemCor(2, 'imagem-central', produtosPequi)">
+                                <img src="../assets/Colors/cor-cinza.webp" alt="Arco Iris">
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product_color_button" type="button" onclick="trocarImagemCor(3, 'imagem-central', produtosPequi)">
+                                <img src="../assets/Colors/roxa.jpeg" alt="Tinta">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="size-selector">
+                    <ul class="options">
+                        <li>
+                            <button class="product_selector_button" type="button">
+                                <span class="size-span">P</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product_selector_button" type="button">
+                                <span class="size-span">M</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="product_selector_button" type="button">
+                                <span class="size-span">G</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="confirm-button">
+                    <a href="link_do_mercadolivre"><button>COMPRAR</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="desc-products">
+        <p>QUADRO FRISO L
+            O produto que você está adquirindo foi produzido em MDF laminado ou painel de fibras de alta densidade e
+            qualidade,
+            são considerados ecologicamente corretos por serem provenientes de reflorestamento, sendo resistentes a
+            umidade, pragas e fungos.
+            Nossas molduras recebem três camadas de pintura acrílica em diversas cores, disponíveis no catálogo em nossa
+            página.
+            Por ser manufaturado está sujeito a pequenas variações em seu acabamento. São enviadas a você já montadas e
+            com suporte, é só retirar da caixa e pendurar.
+            Disponíveis nos tamanhos 27x27 cm, 43x43 cm, 60x60 cm e 90x90 cm e espessura de 2,3mm.
+            Verifique a cor descrita no final da compra.</p>
+        <p>GRAVURAS
+            Utilizamos impressão feita com tecnologia digital de alta resolução onde são empregados tintas e pigmentos
+            minerais que garantem maior durabilidade e cores vivas,
+            além de grande resistência a ação de raios ultravioleta e desbotamento.
+            Em conjunto escolhemos o Canvas um tecido 100% Algodão para receber as estampas o qual lhe confere aspecto
+            rústico e dispensa o uso de vidro.
+            Disponíveis nos tamanhos 14x14 cm, 26x26 cm, 42x42cm, 59x59cm e 89x89cm.</p>
+        <p>FOTOS
+            As impressões são feitas com equipamentos de última geração utilizando papel fotográfico de alta qualidade e
+            definição.
+            As fotos recebem revestimento em laminação fosca a base de Poliéster importado que garantem maior
+            resistência, proteção UV e textura acetinada
+            que maximizam as cores da imagem dispensando o uso de vidro.
+            Disponíveis nos tamanhos 14x14 cm, 26x26 cm, 42x42cm e 59x59 cm.</p>
+        <p>LIMPEZA
+            Para limpeza, basta um pano seco macio ou espanador com cerdas macias de microfibra.
+            Nunca utilize produtos químicos ou abrasivos.</p>
+        <p>EMBALAGEM
+            Toda a extremidade do produto é protegida com cantoneiras de Polietileno expandido dentro de uma caixa de
+            papelão reforçado e lacrado,
+            o que garante a integridade até o seu destino.
+            Dúvidas entre em contato pelo “FALE CONOSCO”. Teremos o maior prazer em esclarecer.
+            Bem-vindo a BUYART.</p>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <ul class="footer-about">
+                <h4>SOBRE BUYART</h4>
+                <li><a href="#">Sobre Nos</a></li>
+                <li><a href="#">Privacidade e Segurança</a></li>
+                <li><a href="#">Depoimentos</a></li>
+            </ul>
+            <ul class="footer-suport">
+                <h4>SUPORTE</h4>
+                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#">Trocas e Devoluções</a></li>
+                <li><a href="#">Prazo de Entrega</a></li>
+            </ul>
+            <ul class="footer-register">
+                <h4>Novidades e Promoções</h4>
+                <p>Coloque seu email e fique por dentro das novidades e promoçoes</p>
+                <div class="newsletter">
+                    <input type="email" id="email" placeholder="Seu Email" required>
+                    <div class="footer-button">ENVIAR</div>
+                </div>
+            </ul>
+        </div>
+    </footer>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/products.js"></script>
+</body>
+</html>

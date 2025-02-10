@@ -5,6 +5,12 @@ const produtosIrisBotao = ["../assets/Images/Iris Botão/60x60/2 Quadro L 60x60 
     "../assets/Images/Iris Botão/60x60/1 Quadro L 60x60 White    Iris Botão .jpg", "../assets/Images/Iris Botão/60x60/4 Quadro L 60x60    Purple   Iris Botão.jpg",
     "../assets/Images/Iris Botão/60x60/3 Quadro L 60x60    Dark Grey    Iris Botão .jpg"];
 
+const produtosPequi = ["../assets/Images/Pequi/60x60/1 Quadro L 60x60  .jpg", "../assets/Images/Pequi/60x60/2 Quadro L 60x60 .jpg",
+     "../assets/Images/Pequi/60x60/3 Quadro L 60x60 .jpg", "../assets/Images/Pequi/60x60/4 Quadro L 60x60  .jpg"]
+
+const produtosJoa = ["../assets/Images/Joá/60x60/1 Quadro L   60x60.jpg", "../assets/Images/Joá/60x60/Quadro L 60x60  .jpg", 
+    "../assets/Images/Joá/60x60/Quadro L 60x60 .jpg", "../assets/Images/Joá/60x60/Quadro L 60x60.jpg"]
+
 // Cosntantes de seleções usadas nas funções que selecionam os tamanhos e cores
 const colorButton = document.querySelectorAll('.product_color_button');
 const sizeButton = document.querySelectorAll('.product_selector_button');
