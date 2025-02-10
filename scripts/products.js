@@ -63,3 +63,20 @@ sizeButton.forEach(button => {
         console.log('Tamanho escolhido:', choseSize)
     });
 });
+
+
+
+
+
+
+
+
+//teste 
+
+function sidebarDetails() {
+    document.getElementById("sidebar").classList.add("open")
+}
+
+function sidebarClose() {
+    document.getElementById("sidebar").classList.remove("open")
+}
