@@ -10,7 +10,22 @@ const produtosPequi = ["../assets/Images/Pequi/60x60/1 Quadro L 60x60  .jpg", ".
 
 const produtosJoa = ["../assets/Images/Joá/60x60/1 Quadro L   60x60.jpg", "../assets/Images/Joá/60x60/Quadro L 60x60  .jpg", 
     "../assets/Images/Joá/60x60/Quadro L 60x60.jpg", "../assets/Images/Joá/60x60/Quadro L 60x60 .jpg"]
-const imagensJoa = ["../assets/Images/Joá/60x60/1 Quadro L   60x60.jpg", "../assets/Images/Joá/60x60/Quadro L 60x60  .jpg", '../assets/Images/Fundo Quadro.jpg']
+
+const produtosIrisPraia = ["../assets/Images/Iris da Praia/60x60/1 Quadro L 60x60         White    Iris   .jpg", "../assets/Images/Iris da Praia/60x60/2 Quadro L 60x60        Ligth Grey    Iris   .jpg",
+    "../assets/Images/Iris da Praia/60x60/3 Quadro L 60x60         Dark Grey    Iris   .jpg", "../assets/Images/Iris da Praia/60x60/4 Quadro L 60x60         Purple    Iris  .jpg"]
+
+const produtosRojo = ["../assets/Images/Platyceriun Rojo/60x60/1 Quadro L  60x60  Purple Platyceriun Rojo (2).jpg", "../assets/Images/Platyceriun Rojo/60x60/2 Quadro L  60x60  Purple Platyceriun Rojo.jpg",
+    "../assets/Images/Platyceriun Rojo/60x60/3 Quadro L  60x60  Purple Platyceriun Rojo.jpg", "../assets/Images/Platyceriun Rojo/60x60/4 Quadro L  60x60  Purple Platyceriun Rojo (3).jpg"]
+
+const produtosVioleta = ["../assets/Images/Platycerium Violeta/60x60/1 QuadroL 60x60  White Platyceriun Violeta (2).jpg", "../assets/Images/Platycerium Violeta/60x60/2 QuadroL 60x60  White Platyceriun Violeta.jpg",
+    "../assets/Images/Platycerium Violeta/60x60/3 QuadroL 60x60  White Platyceriun Violeta.jpg", "../assets/Images/Platycerium Violeta/60x60/4 QuadroL 60x60  White Platyceriun Violeta (2).jpg"]
+
+const produtosCoccolobaSeca = ["../assets/Images/Coccoloba Seca Persea/60x60/1 Quadro L 60x60.jpg", "../assets/Images/Coccoloba Seca Persea/60x60/2 Quadro L 60x60.jpg", 
+    "../assets/Images/Coccoloba Seca Persea/60x60/3 Quadro L 60x60.jpg", "../assets/Images/Coccoloba Seca Persea/60x60/4 Quadro L     60x60 .jpg"]
+
+const produtosCoccolobaPersea = ["../assets/Images/Coccoloba Persea/60x60/1 Quadro L 60x60         White    Coccoloba Persea   .jpg",
+    "../assets/Images/Coccoloba Persea/60x60/2 Quadro L 60x60        Ligth Gray    Coccoloba Persea 2.jpg", "../assets/Images/Coccoloba Persea/60x60/3 Quadro L 60x60        Dark Gray    Coccoloba Persea   .jpg",
+    "../assets/Images/Coccoloba Persea/60x60/4 Quadro L 60x60       Purple    Coccoloba Persea .jpg"]
 
 
 // Cosntantes de seleções usadas nas funções que selecionam os tamanhos e cores
